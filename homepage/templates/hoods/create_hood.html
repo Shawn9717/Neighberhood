@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url(https://images.unsplash.com/photo-1633113247735-45a969eb9266?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aW5zdGFncmFtJTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+        
+    }
+    .card {
+        border: 2px solid black;
+      
+    }
+</style>
+<center><div class="container" style="margin-top: 5rem; width: 100;">
+    <div class="card" style="width: 150;">
+    <div class="text-center">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+          
+            <fieldset class="form-group" >Add Your Hood here<br><br><hr>
+               <div class="form-group">{{ form | crispy }}</div>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" style="margin: 2rem;">Add</button>
+            </div>
+        </form></div></div></div></center>
+    </div>
+    
+    {% endblock %}

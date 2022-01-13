@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="navbar">
+    {% include "home/navbar.html" %}
+</div>
+<body style="background-color: wheat !important;">
+
+
+<h3>Bussinesses</h3>
+  <div class="container-fluid mt-5">
+    <div class="px-lg-5">
+      <div class="row">
+        <!-- Gallery item -->
+        {%for post in posts%}
+        <div class="col-xl-4 col-lg-3 col-md-4 mb-4">
+         
+          <div class="bg-white rounded shadow-sm">
+            {{post.name}}
+            <a href="/project/{{project.id}}">
+              <img
+                src="/media/{{post.image}}"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+            </a>
+            <div class="p-4">
+              <h5><a href="#" class="text-dark"> {{ post.title }}<br> 
+             
+              </p></a></h5>
+              <p class="small text-muted mb-0">
+                {{post.content| truncatechars:210}}
+              </p>
+
+              <div class="container">
+                <div class="row row-cols-2">
+                  <div class="col"> <a href="{% url 'blog:blog_comments' post.slug %}" class="btn btn-primary">Read More </a><br></div>
+                  <div class="col">
+                    <a href="{% url 'homepage:delete_post' post.id %}" class="btn btn-danger">Delete Blog</a></a>
+                  </div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+              </div>
+
+
+
+               </a></p><br>
+             
+                 <small style="opacity: 0.8; " >
+                  Added on: {{ post.dateTime | date:"H:i l, d.m.y" }} 
+                  <hr>by {{post.author}}
+               </small>
+              <div
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                  rounded-pill
+                  px-3
+                  py-2
+                  mt-4
+                "
+              >
+                <p class="small mb-0">
+                
+                  <span class="font-weight-bold"></span>
+                </p>
+                <div
+                  class="badge badge-primary px-3 rounded-pill font-weight-normal"
+                ></div>
+                <div
+                  class="badge badge-success px-3 rounded-pill font-weight-normal"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {%endfor%}
+        <!-- End -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+      </div>
+    </div>
+  </body>
+  {% endblock %}

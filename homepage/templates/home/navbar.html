@@ -1,0 +1,58 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white;">
+    <div class="container-fluid" style="background-color: white;">
+      <a style="margin-left: 2rem;" class="navbar-brand" href="#">
+       <!-- <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">-->
+              <a class="navbar-brand" href="#" style="background-color: transparent;">
+            Neighbor<i class="fas fa-search-location"></i>Watch
+              </a>
+           
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <form class="d-flex" style="margin-left: 8rem;" action="">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</i>
+                <span class="visually-hidden"></span>
+              </div></button>
+          </form>
+        </ul>
+        
+        <span class="navbar-text">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'homepage:new_post' %}">Create Hood</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'users:profile' %}">Profile</a>
+                </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Logout</i></a>
+</li> {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</i></a>
+              </li>
+              {% endif %}
+               
+                </li>
+              </ul>
+          
+        </span>
+      </div>
+    </div>
+  </nav>
+  </a>
