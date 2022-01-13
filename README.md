@@ -1,13 +1,11 @@
- Neighborhood Insight: Qurtubah
+## Qwanza Neighborhood
+Developed by **Shawn Njoga** and **Moringa School**
 
+lets people living in the same area to join channels where announcements concerning their areas of stay are made. An individual can sign up for the application, join channel, post and view posts in the channels.
 
-
-## OVERVIEW
-This project will examine Qurtubah, a neihborhood in Riyadh city according to the following measures: destinations, diversity, density, street connectivity, and different age groups friendliness. 
 
 ### Target Audience
 if done on a bigger scale such project would have many usecases, such as:
-- Someone who's moving to Riyadh and looking for a perfect neighborhood for their needs.
 - Someone who's looking for a place to buy or rent.
 - Business owners looking to expand their business to a new location.
 
