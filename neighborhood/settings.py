@@ -198,11 +198,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #just an example, dont share your .env settings
 
-cloudinary.config(
-  cloud_name = config('CLOUDINARY_NAME'),
-  api_key = config('CLOUDINARY_API_KEY'),
-  api_secret = config('CLOUDINARY_SECRET')
-)
+
 
 
 # Configure Django App for Heroku.

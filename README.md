@@ -38,7 +38,7 @@ To work with Qwanza-neigboorhood App you need to have some few prerequisites.
 - Terminal
 
 # Project setup instructions
-You can install this app by cloning the repository from this link https://github.com/Shawn9717/instagram-clone.git
+You can install this app by cloning the repository from this link https://github.com/Shawn9717/QwanzaNeigbohood.git
 
 # Development
 
