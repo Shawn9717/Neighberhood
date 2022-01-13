@@ -49,8 +49,8 @@
          
       </div>
       <div class="col" style="margin-top: 6rem;">
-        <button type="button" class="btn btn-primary">Join neighbourhood</button>
-        <button type="button" class="btn btn-danger">Leave neighbourhood</button>
+        <button type="button" class="btn btn-primary">Join  this neighbourhood</button>
+        <button type="button" class="btn btn-danger">Leave this neighbourhood</button>
         <div class="container" style="margin-top: 3rem;">
           <div class="row row-cols-2">
             <div class="col">
@@ -60,13 +60,13 @@
             <div class="col"></div>
             <div class="col">
               <img src="https://media.istockphoto.com/photos/american-policeman-and-police-car-in-the-background-picture-id1249400249?b=1&k=20&m=1249400249&s=170667a&w=0&h=W9ISZ_KUSX5ZlYhgDbDchudq4CvGAxkuhbP8V3J61iM=" width="150" height="150">
-              <p>Police Information</p>
+              <p>Police  and inteligence Information</p>
               {{post.security_department}}
             
             </div>
             <div class="col">
               <img src="https://media.istockphoto.com/photos/modern-hospital-building-picture-id1312706504?b=1&k=20&m=1312706504&s=170667a&w=0&h=IcYI9Pm-s-JyeCOgul1DfSQAqY3hVte4uXnStOXbkaw=" width="150" height="150">
-              <p>Hospital</p>
+              <p>Hospitals</p>
               {{post.hospital_contact}}
               {% for business in context %} 
               {{business.name}}
@@ -76,8 +76,8 @@
         </div>
       </div>
       <div class="col">
-        <a style="margin-left: 0rem;" href="{% url 'blog:add_blogs' %}" class="btn btn-primary" role="button">Add Business</a>
-        <a style="margin-left: 6rem;" href="{% url 'blog:blogs' %}" class="btn btn-primary" role="button">View Business</a>
+        <a style="margin-left: 0rem;" href="{% url 'blog:add_blogs' %}" class="btn btn-primary" role="button">Add  your ownBusiness</a>
+        <a style="margin-left: 6rem;" href="{% url 'blog:blogs' %}" class="btn btn-primary" role="button">View Businesses that are available</a>
         
       </div>
       <div class="col"></div>
